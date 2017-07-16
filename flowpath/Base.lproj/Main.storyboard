@@ -17,11 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zye-1q-goZ">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHK-hh-P3L">
+                                <rect key="frame" x="217" y="179" width="129" height="30"/>
+                                <color key="backgroundColor" red="0.19960625779789054" green="0.283253226650648" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="😱"/>
                                 <connections>
-                                    <action selector="showMessage" destination="BYZ-38-t0r" eventType="touchUpInside" id="HaC-kG-jtd"/>
+                                    <action selector="showGasp" destination="BYZ-38-t0r" eventType="touchUpInside" id="51y-2f-Z4l"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LXv-pq-Sol">
+                                <rect key="frame" x="362" y="178" width="51" height="31"/>
+                                <connections>
+                                    <action selector="showMessage" destination="BYZ-38-t0r" eventType="valueChanged" id="48R-JT-Www"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zye-1q-goZ">
+                                <rect key="frame" x="217" y="99" width="129" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.68199526483474293" blue="0.19990472893134237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="💩"/>
+                                <connections>
+                                    <action selector="showShit" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ls-YT-qKp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -30,6 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="418"/>
         </scene>
     </scenes>
 </document>

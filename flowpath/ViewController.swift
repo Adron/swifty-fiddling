@@ -27,5 +27,16 @@ class ViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alertController, animated: true, completion: nil)
     }
+    
+    @IBAction func showShit() {
+        let shitController = UIAlertController(title: "Welcome to the shit show!", message: "Shit!", preferredStyle: UIAlertControllerStyle.Alert)
+        shitController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(shitController, animated: false, completion: nil)
+    }
 
+    @IBAction func showGasp() {
+        let gaspController = UIAlertController(title: "Oh gasp!", message: "Gasp!", preferredStyle: UIAlertControllerStyle.Alert)
+        gaspController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(gaspController, animated: false, completion: nil)
+    }
 }
